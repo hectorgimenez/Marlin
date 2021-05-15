@@ -289,7 +289,7 @@
   #define BTN_EN2                          P1_22
 
   #ifndef BEEPER_PIN
-    #define BEEPER_PIN                     P1_21
+    #define BEEPER_PIN                     -1
     #undef SPEAKER
   #endif
 
@@ -325,7 +325,7 @@
 
     #define LCD_PINS_ENABLE          EXP1_08_PIN
     #define LCD_PINS_D4              EXP1_06_PIN
-    #define BEEPER_PIN               EXP1_03_PIN
+    #define BEEPER_PIN               -1
 
   #elif ENABLED(ANET_FULL_GRAPHICS_LCD)
     #error "CAUTION! ANET_FULL_GRAPHICS_LCD requires wiring modifications. See 'pins_BTT_SKR_V1_4.h' for details. Comment out this line to continue."
@@ -360,7 +360,7 @@
     #define LCD_PINS_ENABLE          EXP1_05_PIN
     #define LCD_PINS_D4              EXP1_07_PIN
 
-    #define BEEPER_PIN               EXP1_10_PIN
+    #define BEEPER_PIN               -1
 
   #elif ENABLED(CR10_STOCKDISPLAY)
     #define BTN_ENC                  EXP1_09_PIN  // (58) open-drain
